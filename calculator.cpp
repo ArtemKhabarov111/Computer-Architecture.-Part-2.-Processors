@@ -12,5 +12,16 @@ int Calculator::Sub (double a, double b)
 
 int Calculator::Mul (double a, double b)
 {
-    return a * b + 0.5;
+	return a * b + 0.5;
+}
+
+// Операція ділення з перевіркою ділення на 0
+int Calculator::Div(double a, double b)
+{
+	if(b == 0)
+	{
+		return 0;
+	}
+	
+	return	a / b;
 }
